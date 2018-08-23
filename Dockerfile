@@ -2,7 +2,7 @@ FROM docker:latest
 
 MAINTAINER Weissteiner Hannes <h.weissteiner@gmail.com>
 
-RUN apk update && apk add postgresql-client && rm -rf /var/cache/apk/* && touch /var/log/janitor
+RUN apk update && apk add postgresql-client && rm -rf /var/cache/apk/* && touch /var/log/janitor.sql
 
 COPY ./exec-janitor.sh /etc/periodic/weekly
 COPY ./clear-log.sh /etc/periodic/monthly
