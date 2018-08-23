@@ -1,0 +1,1 @@
+select * from users_who_share_rooms;
